@@ -8,6 +8,7 @@ data = pd.read_csv('data.csv')
 # TODO:
 #  * different colours? https://matplotlib.org/3.1.0/gallery/color/named_colors.html
 #  * can I make the labels more centered, or wrap?
+#  * DRY this a bit, if I feel like it
 # ------------------------------------------------------------------------
 
 
@@ -137,10 +138,15 @@ def draw_gender():
 
 draw_gender()
 
+
+# ------------------------------------------ #
+#                correlations                #
+# ------------------------------------------ #
+
+
 tips = sns.load_dataset("tips")
 ax = sns.barplot(x="day", y="total_bill", hue="sex", data=tips)
 # import pdb; pdb.set_trace()
-
 # plt.show()
 
 

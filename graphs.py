@@ -41,7 +41,7 @@ def draw_lip_chart():
 
     plt.show()
 
-draw_lip_chart()
+# draw_lip_chart()
 
 
 
@@ -77,7 +77,7 @@ def draw_tongue_chart():
 
     plt.show()
 
-draw_tongue_chart()
+# draw_tongue_chart()
 
 
 # ------------------------------------------ #
@@ -109,7 +109,7 @@ def draw_adapt():
 
     plt.show()
 
-draw_adapt()
+# draw_adapt()
 
 
 # ------------------------------------------ #
@@ -122,7 +122,7 @@ def draw_gender():
 
     plt.pie(
         gender_counts,
-        # colors = ['yellowgreen', 'lightcoral', 'lightskyblue'],
+        colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue'],
         labels=labels,
         autopct='%1.1f%%',
         pctdistance=0.8,
